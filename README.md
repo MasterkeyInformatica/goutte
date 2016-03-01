@@ -1,5 +1,6 @@
 Goutte
 ================================
+
 [![Build Status](https://travis-ci.org/MasterkeyInformatica/goutte.svg?branch=master)](https://travis-ci.org/MasterkeyInformatica/goutte)
 
 Goutte é uma biblioteca de captura e leitura de tela escrita em PHP. Esta ferramenta porvê uam API rica
@@ -15,7 +16,6 @@ Instalação
 
 Adicione ``masterkey/goutte`` como dependência em seu arquivo ``composer.json``:
 
-.. code-block:: bash
 
     composer require masterkey/goutte
 
@@ -24,7 +24,6 @@ Uso
 
 Cria uma instância da classe Client (que extende ``Symfony\Component\BrowserKit\Client``):
 
-.. code-block:: php
 
     use Goutte\Client;
 
@@ -32,14 +31,12 @@ Cria uma instância da classe Client (que extende ``Symfony\Component\BrowserKit
 
 Realiza requests com o método ``request()``:
 
-.. code-block:: php
-
     // Vai ao site Symfony.com
     $crawler = $client->request('GET', 'http://www.symfony.com/blog/');
 
 O método retorna um objeto ``Crawler`` (``Symfony\Component\DomCrawler\Crawler``).
 
-More Information
+Mais Informações
 ----------------
 
 Este pacote foi Baseado no pacote [Goutte](https://github.com/FriendsOfPHP/Goutte).
